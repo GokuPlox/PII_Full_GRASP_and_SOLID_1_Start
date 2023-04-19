@@ -14,8 +14,14 @@ namespace Full_GRASP_And_SOLID.Library
             this.HourlyCost = hourlyCost;
         }
 
+        public double getCost()
+        {
+            return HourlyCost;
+        }
+
         public string Description { get; set; }
 
         public double HourlyCost { get; set; }
+
     }
 }

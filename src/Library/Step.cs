@@ -14,7 +14,15 @@ namespace Full_GRASP_And_SOLID.Library
             this.Input = input;
             this.Time = time;
             this.Equipment = equipment;
+            this.Cost=(this.Input.getCost())+((Equipment.getCost()/3600)*this.Time);
         }
+
+        public double getCost()
+        {
+            return this.Cost;
+        }
+
+        public double Cost{get; set;}
 
         public Product Input { get; set; }
 

@@ -14,6 +14,11 @@ namespace Full_GRASP_And_SOLID.Library
             this.UnitCost = unitCost;
         }
 
+        public double getCost()
+        {
+            return UnitCost;
+        }
+
         public string Description { get; set; }
 
         public double UnitCost { get; set; }
